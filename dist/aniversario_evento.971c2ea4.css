@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #3a3a3a;
+  background: linear-gradient(135deg, #ffd6e8, #d6e6ff, #fff3c4);
+  min-height: 100vh;
+  font-family: Montserrat, sans-serif;
+}
+
+body:before {
+  content: "";
+  pointer-events: none;
+  background: radial-gradient(circle at 20% 30%, #fff9, #0000 40%), radial-gradient(circle at 80% 70%, #fff6, #0000 40%);
+  position: fixed;
+  inset: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 140px 20px;
+  position: relative;
+}
+
+.hero h1 {
+  color: #c9a227;
+  text-shadow: 0 0 10px #c9a22799, 2px 2px 10px #00000040;
+  font-family: Great Vibes, cursive;
+  font-size: 84px;
+}
+
+.hero p {
+  letter-spacing: 2px;
+  margin-top: 20px;
+  font-family: Cinzel, serif;
+  font-size: 24px;
+}
+
+.hero:before {
+  content: "";
+  pointer-events: none;
+  border: 2px solid #c9a22799;
+  border-radius: 12px;
+  position: absolute;
+  inset: 20px;
+}
+
+.hero:after {
+  content: "";
+  pointer-events: none;
+  background: radial-gradient(circle at top, #ffd70026, #0000 60%);
+  position: absolute;
+  inset: 0;
+}
+
+h2 {
+  color: #c9a227;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-family: Cinzel, serif;
+}
+
+section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.container {
+  backdrop-filter: blur(8px);
+  background: #fff9;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  transition: transform .35s, box-shadow .35s;
+  box-shadow: 0 10px 30px #00000026;
+}
+
+.container:hover {
+  transform: translateY(-6px)scale(1.01);
+  box-shadow: 0 15px 40px #00000040, 0 0 20px #c9a22759;
+}
+
+#contador {
+  color: #c9a227;
+  font-size: 42px;
+  font-weight: 500;
+  transition: transform .3s, text-shadow .3s;
+}
+
+#contador:hover {
+  text-shadow: 0 0 15px #c9a227b3;
+  transform: scale(1.15);
+}
+
+.contador {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 24px;
+}
+
+button {
+  cursor: pointer;
+  background: linear-gradient(45deg, #c9a227, #f5d76e);
+  border: none;
+  border-radius: 30px;
+  padding: 16px 34px;
+  font-family: Cinzel, serif;
+  font-size: 16px;
+  transition: transform .25s, box-shadow .25s;
+  box-shadow: 0 5px 15px #0003;
+}
+
+button:hover {
+  transform: translateY(-4px)scale(1.05);
+  box-shadow: 0 10px 25px #0000004d;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (width <= 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .contador {
+    font-size: 20px;
+  }
+}
+
+.programacao li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+@keyframes sumir {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(2)translateY(-40px);
+  }
+}
+/*# sourceMappingURL=aniversario_evento.971c2ea4.css.map */
